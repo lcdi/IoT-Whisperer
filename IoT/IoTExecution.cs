@@ -91,7 +91,7 @@ namespace IoT
             }
 
             Console.WriteLine("       by CyberYom\n");
-            Console.WriteLine(" | IoT\n| The Leahy Center\n| Version: 0.0.1\n└---------------------------------------------------------------------------");
+            Console.WriteLine("| IoT\n| The Leahy Center\n| Version: 0.0.1\n└---------------------------------------------------------------------------");
             Console.Write(" Welcome to IoT Whisperer. Please pass the '");
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("help");
