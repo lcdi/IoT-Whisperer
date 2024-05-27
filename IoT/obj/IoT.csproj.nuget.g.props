@@ -13,4 +13,14 @@
     <SourceRoot Include="C:\Users\User\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)ftd2xx.net\1.2.1\contentFiles\any\netstandard2.1\FTDI2XX.xml" Condition="Exists('$(NuGetPackageRoot)ftd2xx.net\1.2.1\contentFiles\any\netstandard2.1\FTDI2XX.xml')">
+      <NuGetPackageId>FTD2XX.Net</NuGetPackageId>
+      <NuGetPackageVersion>1.2.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>FTDI2XX.xml</Link>
+    </Content>
+  </ItemGroup>
 </Project>

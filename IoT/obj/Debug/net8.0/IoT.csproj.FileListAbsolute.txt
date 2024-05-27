@@ -47,3 +47,4 @@ C:\Users\User\Downloads\IoT-Whisperer-main\IoT\obj\Debug\net8.0\IoT.pdb
 C:\Users\User\Downloads\IoT-Whisperer-main\IoT\obj\Debug\net8.0\IoT.genruntimeconfig.cache
 C:\Users\User\Downloads\IoT-Whisperer-main\IoT\obj\Debug\net8.0\ref\IoT.dll
 C:\Users\User\Downloads\IoT-Whisperer-main\IoT\bin\Debug\net8.0\ReadLine.dll
+C:\Users\User\Downloads\IoT-Whisperer-main\IoT\bin\Debug\net8.0\FTDI2XX.dll

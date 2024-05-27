@@ -5,6 +5,7 @@ namespace IoT
 {
     public class Dependencies
     {
+        // Method to install Telnet using DISM
         public static bool? installTelnet()
         {
             ProcessStartInfo procStartInfo = new ProcessStartInfo("dism.exe", "/Online /Enable-Feature /FeatureName:TelnetClient")
@@ -38,6 +39,7 @@ namespace IoT
             }
         }
 
+        // Method to check if Telnet is installed and install it if necessary
         public static bool? telnet()
         {
             ProcessStartInfo procStartInfo = new ProcessStartInfo("powershell.exe", "-Command \"Get-Command telnet\"")
@@ -84,6 +86,7 @@ namespace IoT
     {
         private static Process openOcdProcess = null;
 
+        // Method to start OpenOCD with specified interface and target configuration
         public static int openOCD(string interfaceCFG, string targetCFG)
         {
             string openOcdPath = @"OpenOCD\bin\openocd.exe";
@@ -104,15 +107,16 @@ namespace IoT
             try
             {
                 openOcdProcess.Start();
-                return 0;
+                return 0; // Return 0 to indicate success
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Error starting OpenOCD: {ex.Message}");
-                return -1;
+                return -1; // Return -1 to indicate an error
             }
         }
 
+        // Method to stop OpenOCD if it is running
         public static void stopOpenOCD()
         {
             if (openOcdProcess != null && !openOcdProcess.HasExited)
@@ -125,6 +129,7 @@ namespace IoT
 
     public class telnet
     {
+        // Method to start a Telnet session to 127.0.0.1 on port 4444
         public static int runTelnet()
         {
             string telnetPath = "cmd.exe";

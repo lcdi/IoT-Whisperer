@@ -2,6 +2,26 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "FTD2XX.Net/1.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/FTDI2XX.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/FTDI2XX.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.1/FTDI2XX.xml": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
       "ReadLine/2.0.1": {
         "type": "package",
         "compile": {
@@ -98,6 +118,26 @@
     }
   },
   "libraries": {
+    "FTD2XX.Net/1.2.1": {
+      "sha512": "mfUBsxQLhF9oyCKyz+ClNeYtuTar1bn8I2BU3w8Z4jjz3nqFeMJONvbIgDExOxjZbi40C77nkd2SY8jONDAd+Q==",
+      "type": "package",
+      "path": "ftd2xx.net/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "content/FTDI2XX.xml",
+        "contentFiles/any/net45/FTDI2XX.xml",
+        "contentFiles/any/netstandard2.0/FTDI2XX.xml",
+        "contentFiles/any/netstandard2.1/FTDI2XX.xml",
+        "ftd2xx.net.1.2.1.nupkg.sha512",
+        "ftd2xx.net.nuspec",
+        "lib/net45/FTDI2XX.dll",
+        "lib/netstandard2.0/FTDI2XX.dll",
+        "lib/netstandard2.1/FTDI2XX.dll",
+        "lib/netstandard2.1/FTDI2XX.xml"
+      ]
+    },
     "ReadLine/2.0.1": {
       "sha512": "m3eptlV2hlZ3gWxdhvgsUpSjwyA3NCeLdbhgDt0V8rXP1E6ZbjOOExcAufHvAZepSKJvV+zZO1eYWGveShA4gw==",
       "type": "package",
@@ -250,6 +290,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "FTD2XX.Net >= 1.2.1",
       "ReadLine >= 2.0.1",
       "System.IO.Ports >= 8.0.0"
     ]
@@ -304,6 +345,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "FTD2XX.Net": {
+            "target": "Package",
+            "version": "[1.2.1, )"
+          },
           "ReadLine": {
             "target": "Package",
             "version": "[2.0.1, )"
