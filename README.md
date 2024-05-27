@@ -60,7 +60,7 @@ To install the necessary dependencies and set up the environment, follow these s
 
 ### UART Commands
 
-- **baud**: Detect the baud rate of a device.
+- **baud [-v]**: Detect the baud rate of a device.
 - **connect**: Connect to a device using a specified COM port and baud rate.
 - **back**: Return to the main menu from UART mode.
 
