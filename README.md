@@ -22,7 +22,7 @@
 
  Whisper >
 ```
-IoT Whisperer is a versatile tool developed for the IoT team at The Leahy Center, capable of performing forensic acquisitions using UART, JTAG, SWD, SPI, and I2C interfaces. It provides a comprehensive set of commands to interact with various debugging interfaces and facilitates data dumping and analysis.
+IoT Whisperer is a versatile tool written in C# for the IoT team at The Leahy Center, capable of performing forensic acquisitions using UART, JTAG, SWD, SPI, and I2C interfaces. It provides a comprehensive set of commands to interact with various debugging interfaces and facilitates data dumping and analysis.
 
 ## Features
 
