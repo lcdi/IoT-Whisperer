@@ -16,7 +16,7 @@
 
 | IoT
 | The Leahy Center
-| Version: 0.0.1
+| Version: 1.0.0
 └---------------------------------------------------------------------------
  Welcome to IoT Whisperer. Please pass the 'help ' command to view the help menu.
 
