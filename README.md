@@ -91,10 +91,41 @@ To install the necessary dependencies and set up the environment, follow these s
 
 ### Connecting via UART:
 
-```sh
+```
 Whisper > uart
 Enter COM port (e.g., COM3): COM3
 UART > connect
 Enter Baudrate (e.g., 9600): 9600
+```
 
- 
+### Starting the OpenOCD Server for JTAG:
+
+```
+Whisper > jtag
+JTag > start
+Enter an interfacing CFG file: interface.cfg
+Please enter a target cfg: target.cfg
+```
+
+### Dumping Data via I2C:
+
+```
+Whisper > i2c
+I2C > dump
+Enter I2C address (in hex, e.g., 0x40): 0x40
+Enter buffer size: 256
+Enter the filename to dump the data: I2Cdump.bin
+```
+
+## Contributing
+
+Contributions are welcome! Please submit issues and pull requests to the [GitHub repository](https://github.com/lcdi/IoT-Whisperer).
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- Developed by the CyberYom and the IoT team at The Leahy Center.
+- Special thanks to all contributors and testers.
