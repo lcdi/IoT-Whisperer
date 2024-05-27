@@ -128,4 +128,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ## Acknowledgements
 
 - Developed by the CyberYom and the IoT team at The Leahy Center.
+- ChatGPT for commenting the code
 - Special thanks to all contributors and testers.
