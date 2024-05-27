@@ -29,7 +29,7 @@ IoT Whisperer is a versatile tool written in C# for the IoT team at The Leahy Ce
 - **UART Interface**: Connect and communicate with devices over UART, detect baud rates, and send commands.
 - **JTAG Interface**: Start and stop the OpenOCD server, connect to JTAG devices, and perform various OpenOCD operations.
 - **I2C Interface**: Initialize I2C communication, read data from I2C devices, and save the data to a file.
-- **SWD Interface**: Connect to devices using the SWD interface, set SWD speed, and dump data.
+- **SWD Interface**: Connect to devices using the SWD interface, set SWD speed, and dump data (J-Link specific).
 - **SPI Interface**: Read data from SPI devices and save the data to a file.
 
 ## Installation
